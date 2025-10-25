@@ -8,7 +8,7 @@ export default function Counter({initialCount = 0, initialStep = 1}){
 
     return (
         <div>
-            <p>Current Sales Count: {count}</p>
+            <p aria-live="polite">Current Sales Count: {count}</p>
         
             <button onClick={() => setCount(count + step)}>Increment</button>
             <br/>
@@ -16,7 +16,7 @@ export default function Counter({initialCount = 0, initialStep = 1}){
             <br/>
             <button onClick={() => setCount(initialCount)}>Reset</button>
             <br/>
-            <input type="number" min="1" value={step} onChange={(e) => {const newValue = Number(e.target.value);
+            Custom Step Counter: <input type="number" min="1" value={step} onChange={(e) => {const newValue = Number(e.target.value);
             setStep(Math.max(1, isNaN(newValue) ? 1 : newValue));
           }}/>
         </div>
