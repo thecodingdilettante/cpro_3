@@ -1,36 +1,57 @@
+<h1>Coding Project — Next.js “Button Counter” (React)</h1>
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+<h1>Overview</h1>
+
+Build a small Next.js web app that renders a reusable Button Counter component. Students will scaffold a Next.js project, implement stateful React UI with accessible controls, and deploy it to GitHub.
+
+
+<h1>Getting Started</h1>
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+(This project was built by using npx create-next-app@latest my-next-app, selecting YES for recommended add-ons, and cd my-next-app before using the above npm run dev.)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h1>Checklist</h1>
 
-## Learn More
+<h2>Counter Component - Done</h2>
+Displays the current count.
 
-To learn more about Next.js, take a look at the following resources:
+<b>Buttons:</b>
+<ul><li>Increment (+1 by default)
+<li>Decrement (-1 by default)
+<li>Reset (sets count back to 0)</ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A Step input (input type="number") that sets how much to add/subtract.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<b>Props - Done</b>
+<ul><li>initialCount (number, default 0)
+<li>initialStep (number, default 1)</ul>
 
-## Deploy on Vercel
+<h2>Accessibility - Done</h2>
+<ul><li>Buttons have clear text labels.
+<li>Count region is announced on change (aria-live="polite").</ul>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h2>State Management - Done</h2>
+<ul><li>Use useState for count and step.
+<li>>Disable decrement if count - step would go below 0.</ul>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>Home Page (/) - Done</h2>
+<ul><li>Renders one Counter with defaults.
+<li>Renders one Counter with custom props (e.g., initialCount={5}, initialStep={2}).</ul>
+
+<h2>Quality - Done</h2>
+<ul><li>No runtime errors.
+<li>Clean layout and simple CSS.</ul>
+
+<h1>Known Issues/Limitations</h1>
+
+None identified.
+

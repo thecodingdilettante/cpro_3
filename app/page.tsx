@@ -6,8 +6,10 @@ export default function Home() {
         <main>
             <h1>Sales Dashboard</h1>
             <br/>
+            THIS COUNTER STARTS AT 0.
             <Counter/>
             <br/>
+            THIS COUNTER STARTS AT 2.
             <CustomCounter/>
         
         </main>
