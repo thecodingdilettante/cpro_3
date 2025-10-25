@@ -41,7 +41,7 @@ A Step input (input type="number") that sets how much to add/subtract.
 
 <h2>State Management - Done</h2>
 <ul><li>Use useState for count and step.
-<li>>Disable decrement if count - step would go below 0.</ul>
+<li>Disable decrement if count - step would go below 0.</ul>
 
 <h2>Home Page (/) - Done</h2>
 <ul><li>Renders one Counter with defaults.
